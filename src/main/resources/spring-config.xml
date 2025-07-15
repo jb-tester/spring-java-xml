@@ -2,6 +2,13 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="b0" class="com.mytests.spring.javaXml.XmlOnlyBeanWithSingleConstructor">
+
+        <constructor-arg index="0" value="first"/>
+        <constructor-arg index="1" value="second"/>
+    </bean>
+
+
     <bean class="com.mytests.spring.javaXml.XmlOnlyBean" name="b1">
         <constructor-arg value="constructor_b1"/>
         <property name="someProperty" value="b1_property"/>
