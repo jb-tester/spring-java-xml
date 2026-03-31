@@ -4,7 +4,7 @@ package com.mytests.spring.javaXml;
 public class XmlOnlyBeanWithSingleConstructor {
     private final String firstConstructorArg;
     private final String secondConstructorArg;
-
+// false autowiring error
     public XmlOnlyBeanWithSingleConstructor(String firstConstructorArg,
                                             String secondConstructorArg) {
         this.firstConstructorArg = firstConstructorArg;

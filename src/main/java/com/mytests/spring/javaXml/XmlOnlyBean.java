@@ -5,11 +5,11 @@ public class XmlOnlyBean {
     private final String firstConstructorArg;
     private String someProperty;
 
-
+   // false autowiring error
     public XmlOnlyBean(String firstConstructorArg) {
         this.firstConstructorArg = firstConstructorArg;
     }
-
+// false autowiring error
     public XmlOnlyBean(int secondConstructorArg1, String secondConstructorArg2) {
         this.firstConstructorArg = secondConstructorArg2 + secondConstructorArg1;
     }
@@ -29,8 +29,8 @@ public class XmlOnlyBean {
     @Override
     public String toString() {
         return "XmlOnlyBean{" +
-               "firstConstructorArg='" + firstConstructorArg + '\'' +
-               ", someProperty='" + someProperty + '\'' +
+               "firstConstructorArg='" + getFirstConstructorArg() + '\'' +
+               ", someProperty='" + getSomeProperty() + '\'' +
                '}';
     }
 }
